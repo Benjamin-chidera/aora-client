@@ -22,7 +22,7 @@ export const UserProvider = ({ children }) => {
     setIsSubmitting(true);
     try {
       const { data } = await axios.post(
-        `http://172.20.10.2:3000/api/v1/auth/register`,
+        `https://aora-server-csch.onrender.com/api/v1/auth/register`,
         { ...form }
       );
 
@@ -39,7 +39,7 @@ export const UserProvider = ({ children }) => {
     setIsSubmitting(true);
     try {
       const { data } = await axios.post(
-        `http://172.20.10.2:3000/api/v1/auth/login`,
+        `https://aora-server-csch.onrender.com/api/v1/auth/login`,
         {
           ...form,
         }

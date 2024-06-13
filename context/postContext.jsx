@@ -8,7 +8,7 @@ import { Alert } from "react-native";
 const PostContext = createContext({});
 export const useGlobalPost = () => useContext(PostContext);
 
-const BASE_URL = "http://172.20.10.2:3000/api/v1/posts";
+const BASE_URL = "https://aora-server-csch.onrender.com/api/v1/posts";
 
 export const PostProvider = ({ children }) => {
   const [post, setPost] = useState([]);

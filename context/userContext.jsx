@@ -23,7 +23,6 @@ export const UserProvider = ({ children }) => {
     try {
       const { data } = await axios.post(
         `https://aora-server-csch.onrender.com/api/v1/auth/register`,
-        
         { ...form }
       );
 

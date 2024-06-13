@@ -6,7 +6,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const UserContext = createContext({});
 export const userGlobalContext = () => useContext(UserContext);
 
-const BASE_URL = "172.20.10.2:3000/api/v1/auth";
 export const UserProvider = ({ children }) => {
   const [form, setForm] = useState({
     username: "",
